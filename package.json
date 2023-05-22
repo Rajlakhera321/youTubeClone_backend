@@ -19,6 +19,7 @@
     "gitignore": "^0.7.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.1.1",
+    "node-version": "^3.0.0",
     "nodemon": "^2.0.22"
   }
 }
