@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import route from "./src/routes";
 import cookieParser from "cookie-parser";
+import cors from "cors"
 
 const app = express();
 dotenv.config();
@@ -21,6 +22,7 @@ const connect = () => {
 app.use(cookieParser());
 app.use(express.json());
 app.use("/api", route);
+app.use(cors());
 
 app.use((err, req, res, next) => {
   const status = err.status || 500;
