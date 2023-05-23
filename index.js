@@ -21,8 +21,8 @@ const connect = () => {
 
 app.use(cookieParser());
 app.use(express.json());
-app.use("/api", route);
 app.use(cors());
+app.use("/api", route);
 
 app.use((err, req, res, next) => {
   const status = err.status || 500;
